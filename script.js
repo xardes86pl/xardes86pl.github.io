@@ -27,3 +27,10 @@ saymyname.onclick = () => {
     playSound("audio/heisenbergaudio.mp3");
   }
 }
+
+function show() {
+  document.getElementById('walt')
+    .style.display = "block";
+  document.getElementById('button1')
+    .style.display = "none";
+}
