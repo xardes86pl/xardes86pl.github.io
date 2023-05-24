@@ -9,3 +9,9 @@ const sr = ScrollReveal({
 sr.reveal("header", { delay: 150, origin: "top" });
 sr.reveal(".parent1", { delay: 150, origin: "top" });
 sr.reveal(".parent2", { delay: 150, origin: "top" });
+
+
+function play() {
+  var audio = document.getElementById("audio");
+  audio.play();
+}
