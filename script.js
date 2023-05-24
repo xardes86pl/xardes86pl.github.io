@@ -24,6 +24,6 @@ saymyname.onclick = () => {
       audio.loop = false;
       audio.play();
     }
-    playSound("audio");
+    playSound("audio/heisenbergaudio.mp3");
   }
 }
