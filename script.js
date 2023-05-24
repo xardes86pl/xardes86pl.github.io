@@ -11,7 +11,19 @@ sr.reveal(".parent1", { delay: 150, origin: "top" });
 sr.reveal(".parent2", { delay: 150, origin: "top" });
 
 
-function play() {
-  var audio = document.getElementById("audio");
-  audio.play();
+const saymyname = document.querySelector(".parent2");
+let lastClickTime = 0;
+
+saymyname.onclick = () => {
+  const currentTime = new Date().getTime();
+  const elapsedTime = currentTime - lastClickTime;
+
+  if (elapsedTime >= 10000) {
+    function playSound(audioName) {
+      let audio = new Audio(audioName);
+      audio.loop = false;
+      audio.play();
+    }
+    playSound("audio");
+  }
 }
