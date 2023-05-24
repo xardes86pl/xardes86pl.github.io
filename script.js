@@ -27,10 +27,3 @@ saymyname.onclick = () => {
     playSound("audio/heisenbergaudio.mp3");
   }
 }
-
-function show() {
-let image = document.getElementById('walt')
-    image.src = "images/Walter_White_S5B.png"
-  document.getElementById('button1')
-    .style.display = "none";
-}
