@@ -11,6 +11,29 @@ html {
     z-index: 1;
 }
 
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #2359fb #1ad1ff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #1ad1ff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #2359fb;
+    border-radius: 10px;
+    border: 3px solid #002570;
+  }
+
+
 
 .parent1 {
     display: grid;
@@ -37,7 +60,7 @@ html {
 
 header {
     height: 10vh;
-    width: 100%;
+    width: 100vw;
     /* width: 90vw; */
     /* background: linear-gradient(270deg, rgb(0, 183, 255) 25%, rgb(0, 129, 209) 75%); */
     backdrop-filter: blur(8px);
@@ -78,7 +101,7 @@ a, a:hover, a:visited, a:active {
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     /* transform: translateX(-50%); */
     /* transform: translateY(0%); */
