@@ -35,3 +35,4 @@ const sr = ScrollReveal({
 
 sr.reveal(".sec1", { delay: 150, origin: "top" });
 sr.reveal("#section2", { delay: 150, origin: "top" });
+sr.reveal("#header", { delay: 150, origin: "top" });
