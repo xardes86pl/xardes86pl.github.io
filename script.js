@@ -29,8 +29,8 @@ saymyname.onclick = () => {
 }
 
 function show() {
-  document.getElementById('walt')
-    .style.display = "block";
+let image = document.getElementById('walt')
+    image.src = "images/Walter_White_S5B.png"
   document.getElementById('button1')
     .style.display = "none";
 }
